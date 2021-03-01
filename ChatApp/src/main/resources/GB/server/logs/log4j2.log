@@ -1,0 +1,17 @@
+2021-03-01 13:16:59,174 INFO G.s.C.MyServer [main] Сервер запущен
+2021-03-01 13:16:59,176 INFO G.s.C.MyServer [main] Ожидание пользователя
+2021-03-01 13:17:17,371 INFO G.s.C.MyServer [main] Клиент подключился
+2021-03-01 13:17:17,374 INFO G.s.C.MyServer [main] Ожидание пользователя
+2021-03-01 13:17:34,943 INFO G.s.C.MyServer [main] Клиент подключился
+2021-03-01 13:17:34,944 INFO G.s.C.MyServer [main] Ожидание пользователя
+2021-03-01 13:17:55,295 INFO G.s.C.MyServer [main] Клиент подключился
+2021-03-01 13:17:55,296 INFO G.s.C.MyServer [main] Ожидание пользователя
+2021-03-01 13:18:03,596 WARN G.s.a.BaseAuthService [Thread-2] Пользователя с login = denis и password = 1234 в DB не существует
+
+2021-03-01 13:18:17,228 WARN G.s.a.BaseAuthService [Thread-2] Пользователя с login = kirill и password = 1234 в DB не существует
+
+2021-03-01 13:18:21,975 ERROR G.s.h.ClientHandler [Thread-2] Произошла ошибка Connection reset
+2021-03-01 13:18:30,352 INFO G.s.h.ClientHandler [Thread-0] Пользователь Борис_Николаевич прислал сообщение: Привет всем
+2021-03-01 13:18:43,439 INFO G.s.h.ClientHandler [Thread-1] Пользователь Мартин_Некотов прислал сообщение: /w Борис_Николаевич Привет, Борис!
+2021-03-01 13:18:46,362 ERROR G.s.h.ClientHandler [Thread-1] Произошла ошибка Connection reset
+2021-03-01 13:18:48,717 ERROR G.s.h.ClientHandler [Thread-0] Произошла ошибка Connection reset
