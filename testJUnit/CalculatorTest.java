@@ -19,7 +19,7 @@ class CalculatorTest {
         return Stream.of(
                 Arguments.arguments(new int[]{1, 2, 4, 4, 2, 3, 4, 1, 7}, new int[]{1, 7}),
                 Arguments.arguments(new int[]{9, 8, 4, 7, 2, 5, 6, 7, 1}, new int[]{7, 2, 5, 6, 7, 1}),
-                Arguments.arguments(new int[]{9, 8, 4, 7, 2, 5, 6, 7, 1}, new int[]{5, 6, 7, 2})
+                Arguments.arguments(new int[]{9, 8, 4, 7, 4, 5, 6, 7, 2}, new int[]{5, 6, 7, 2})
         );
     }
 
@@ -50,7 +50,7 @@ class CalculatorTest {
 
     @Test
     void methodA3() {
-        Assertions.assertThrows(RuntimeException.class, () -> calculator.methodA(new int[]{1, 2, 4, 4, 2, 3, 4, 1, 7}));
+        Assertions.assertThrows(RuntimeException.class, () -> calculator.methodA(new int[]{1, 2, 0, 0, 2, 3, 0, 1, 7}));
     }
 
 
@@ -63,12 +63,12 @@ class CalculatorTest {
     @ParameterizedTest
     @MethodSource("dataB")
     void methodB2(int[] arr) {
-        Assertions.assertFalse(calculator.methodB(arr));
+        Assertions.assertTrue(calculator.methodB(arr));
     }
 
     @Test
     void methodB3() {
-        Assertions.assertTrue(calculator.methodB(new int[]{2, 3, 2, 6, 8, 9, 0, 0}));
+        Assertions.assertTrue(calculator.methodB(new int[]{2, 3, 2, 6, 8, 9, 1, 0}));
     }
 
 
