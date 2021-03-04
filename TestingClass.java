@@ -45,16 +45,18 @@ public class TestingClass {
             }
         }
 
-        beforeSuiteMethod.invoke(classObject);
-
+        if (beforeSuiteMethod != null) {
+            beforeSuiteMethod.invoke(classObject);
+        }
         for (Integer priority : testMethodsMap.keySet()) {
             Set<Method> methodSet = testMethodsMap.get(priority);
             for (Method method : methodSet) {
                 method.invoke(classObject);
             }
         }
-
-        afterSuiteMethod.invoke(classObject);
+        if (afterSuiteMethod != null) {
+            afterSuiteMethod.invoke(classObject);
+        }
     }
 
 
